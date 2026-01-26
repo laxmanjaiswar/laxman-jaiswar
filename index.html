@@ -4,7 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Laxman Jaiswar | CV & Portfolio</title>
+
   <link rel="stylesheet" href="style.css" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -46,8 +48,10 @@
     <h2 class="section-title">Education</h2>
     <div class="card">
       <h3>12th Grade – Maharashtra Board</h3>
-      <p>Currently pursuing higher secondary education with a strong focus on
-         mathematics, finance, and technology.</p>
+      <p>
+        Currently pursuing higher secondary education with a strong focus on
+        mathematics, finance, and technology.
+      </p>
     </div>
   </section>
 
@@ -101,10 +105,12 @@
         <h3>Clear Teaching</h3>
         <p>Ability to simplify complex topics for easy understanding</p>
       </div>
+
       <div class="card">
         <h3>Practical Approach</h3>
         <p>Focus on real-world examples and hands-on learning</p>
       </div>
+
       <div class="card">
         <h3>Student-Friendly</h3>
         <p>Patient, supportive, and goal-oriented teaching mindset</p>
@@ -112,27 +118,48 @@
     </div>
   </section>
 
-  <!-- ================= CONTACT ================= -->
+  <!-- ================= CONTACT (n8n CONNECTED) ================= -->
   <section id="contact" class="section light-bg">
     <h2 class="section-title">Contact Me</h2>
-    <form id="contactForm" class="contact-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn-primary">Send Message</button>
+
+    <form
+      class="contact-form"
+      action="https://laxmanjaiswar.app.n8n.cloud/webhook-test/6d595039-b8e1-4304-bd87-9dcbd4e4877d"
+      method="POST"
+    >
+      <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        required
+      />
+
+      <input
+        type="email"
+        name="email"
+        placeholder="Your Email"
+        required
+      />
+
+      <textarea
+        name="message"
+        placeholder="Your Message"
+        required
+      ></textarea>
+
+      <button type="submit" class="btn-primary">
+        Send Message
+      </button>
     </form>
+
     <p class="contact-note">Email / Phone details can be added here</p>
   </section>
 
+  <!-- ================= FOOTER ================= -->
   <footer class="footer">
     <p>© 2026 Laxman Jaiswar | Personal CV Website</p>
   </footer>
-  <form 
-  action="https://laxmanjaiswar.app.n8n.cloud/webhook-test/6d595039-b8e1-4304-bd87-9dcbd4e4877d"
-  method="POST"
->
 
   <script src="script.js"></script>
 </body>
 </html>
-
